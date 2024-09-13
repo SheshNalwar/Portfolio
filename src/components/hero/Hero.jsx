@@ -102,7 +102,7 @@ const Hero = () => {
                     variants={imageVariants}
                     initial="initial"
                     animate="animate"
-                    src="/profile.jpeg"
+                    src="/profile.png"
                     alt="Hero Image"
                 />
             </div>

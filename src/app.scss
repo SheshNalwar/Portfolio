@@ -10,6 +10,32 @@ html {
     font-family: "DM Sans", sans-serif;
 }
 
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Small width for the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f156;
+    /* Background color of the scrollbar track */
+    border-radius: 10px;
+    /* Rounded borders for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(136, 80, 192);
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded borders for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(104, 66, 143);
+    /* Slightly darker color when hovering */
+}
+
+
 body {
     background-color: #0c0c1d;
     color: lightgray;
@@ -21,10 +47,34 @@ a {
 }
 
 section {
-    height: 100vh;
     scroll-snap-align: center;
 }
 
+#Skills {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 0 5vw;
+}
+
+#Portfolio {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#Contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 .course {
     height: 100vh;
