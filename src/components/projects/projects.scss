@@ -1,0 +1,30 @@
+.projects {
+    height: auto;
+    // width: 1350px;
+    position: relative;
+    padding: 50px;
+
+    .progress {
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: orange;
+        font-size: 36px;
+
+        h1 {}
+
+        .progressBar {
+            height: 10px;
+            background-color: white;
+        }
+    }
+}
+
+.section {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}

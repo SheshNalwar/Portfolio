@@ -7,7 +7,7 @@ const Hero = () => {
     const [isDeletingH1, setIsDeletingH1] = useState(false);
     const [textH1, setTextH1] = useState('');
     const [deltaH1, setDeltaH1] = useState(100); // Faster typing speed for H1
-    const toRotateH1 = ["A PASSIONATE DEVELOPER AND UI DESIGNER"];
+    const toRotateH1 = ["A PASSIONATE DEVELOPER AND UI UX DESIGNER"];
     const periodH1 = 1000;
 
     const [loopNumH2, setLoopNumH2] = useState(0);
