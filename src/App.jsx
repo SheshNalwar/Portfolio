@@ -2,7 +2,7 @@ import "./app.scss";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import { Skills } from "./components/skillSection/Skills";
-import Projects from "./components/projects/projects";
+import Project from "./components/projectSection/Project";
 import Test from "./Test";
 const App = () => {
   return (
@@ -12,10 +12,8 @@ const App = () => {
         <Hero />
       </section>
       <section id="Skills"><Skills /></section>
-      <section id="Projects"> <Projects /> </section>
-      <section id="Portfolio">Parallax</section>
-      <section id="Contact">Contact</section>
-      {/* <Test /> */}
+      <section id="Projects"> <Project /> </section>
+
 
     </>
   );
