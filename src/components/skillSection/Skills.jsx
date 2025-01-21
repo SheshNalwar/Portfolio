@@ -9,7 +9,7 @@ import reactjs from '/reactjs.png'
 import express from '/expressjs.png'
 import mongodb from '/mongodb.png'
 import node from '/nodejs.png'
-import { skills } from "../../../Data";
+import { skills } from "../../Data";
 
 export const Skills = () => {
     const responsive = {

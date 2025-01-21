@@ -7,7 +7,7 @@ const Hero = () => {
     const [isDeletingH1, setIsDeletingH1] = useState(false);
     const [textH1, setTextH1] = useState('');
     const [deltaH1, setDeltaH1] = useState(100); // Faster typing speed for H1
-    const toRotateH1 = ["A PASSIONATE DEVELOPER AND UI UX DESIGNER"];
+    const toRotateH1 = ["A PASSIONATE DEVELOPER AND UI-UX DESIGNER"];
     const periodH1 = 1000;
 
     const [loopNumH2, setLoopNumH2] = useState(0);
@@ -85,11 +85,11 @@ const Hero = () => {
         <div className="hero">
             <div className="wrapper">
                 <motion.div className="text-container" variants={textVariants} initial="initial" animate="animate" >
-                    <motion.h2 variants={textVariants}>{textH2}</motion.h2>
+                    <motion.h2 className="font-extrabold" variants={textVariants}>{textH2}</motion.h2>
                     <motion.h1 variants={textVariants}>{textH1}</motion.h1>
                     <motion.div variants={textVariants} className="buttons">
-                        <motion.button variants={textVariants} className="btn">See the Latest Works</motion.button>
-                        <motion.button variants={textVariants} className="btn">Let's Connect</motion.button>
+                        <motion.button variants={textVariants} className="btn cursor-pointer">See the Latest Works</motion.button>
+                        <motion.button variants={textVariants} className="btn cursor-pointer">Let's Connect</motion.button>
                     </motion.div>
                     <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="Scroll Icon" />
                 </motion.div>

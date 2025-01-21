@@ -85,3 +85,19 @@ export const skills = [
         alt: "github"
     }
 ]
+
+export const ProjectDetails = [
+    {
+        title: "project1",
+        desc: "project 1 description",
+        imgSrc: "img source",
+        imgAlt: "image alt",
+        skills: {
+            one: "abc",
+            two: "pqr",
+            three: "xyz",
+        },
+        link: "link to project",
+        source: "link to github source code",
+    }
+]

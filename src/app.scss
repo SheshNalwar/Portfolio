@@ -1,5 +1,5 @@
 html {
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
@@ -64,14 +64,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #Projects {
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 
