@@ -1,16 +1,7 @@
-// import meter1 from "../assets/img/meter1.svg";
-// import meter2 from "../assets/img/meter2.svg";
-// import meter3 from "../assets/img/meter3.svg";
-import img from "/facebook.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './skills.scss';
-import reactjs from '/reactjs.png'
-import express from '/expressjs.png'
-import mongodb from '/mongodb.png'
-import node from '/nodejs.png'
 import { skills } from "../../Data";
-
 export const Skills = () => {
     const responsive = {
         superLargeDesktop: {

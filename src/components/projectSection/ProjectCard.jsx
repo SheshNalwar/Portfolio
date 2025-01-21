@@ -22,8 +22,8 @@ const ProjectCard = () => {
     );
 
     return (
-        <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
-            <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+        <section ref={targetRef} className="relative h-[400vh] scroll-smooth">
+            <div className="sticky top-0 flex h-screen items-center overflow-hidden ">
                 <motion.div
                     style={{
                         x,
@@ -34,31 +34,31 @@ const ProjectCard = () => {
                     {ProjectDetails.map((details, index) => (
                         <div
                             key={index}
-                            className={`group relative h-[70vh] w-[30vw] overflow-hidden rounded-lg bg-neutral-200 mx-[12px]`}
+                            className={`group  h-[70vh] w-[30vw] text-white px-5 py-3 overflow-hidden rounded-lg mx-[12px] border-2 border-purple-700`}
                         >
                             <img
                                 src={details.imgSrc}
                                 alt={details.imgAlt}
-                                className="absolute inset-0 z-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                                className=" h-60 w-full transition-transform duration-300"
                             />
-                            <div className="absolute inset-0 z-10 grid place-content-center bg-gradient-to-t from-black/70 to-transparent p-4">
-                                <h2 className="text-xl font-bold text-white">{details.title}</h2>
-                                <p className="mt-2 text-sm text-gray-300">{details.desc}</p>
-                                <div className="flex flex-wrap gap-2 mt-4">
+                            <div className=" w-full px-5 py-2">
+                                <h2 className="text-xl font-bold text-white capitalize tracking-wider ">{details.title}</h2>
+                                <p className="text-base h-20 text-gray-200 w-full">{details.desc}</p>
+                                <div className="flex flex-wrap gap-2 mt-2">
                                     {Object.values(details.skills).map((skill, idx) => (
                                         <button
                                             key={idx}
-                                            className="px-3 py-1 text-xs font-medium text-white bg-purple-700 rounded-md"
+                                            className="px-2 w-auto text-sm font-bold rounded-md capitalize cursor-pointer bg-purple-700"
                                         >
                                             {skill}
                                         </button>
                                     ))}
                                 </div>
-                                <div className="flex gap-4 mt-4">
-                                    <button className="px-3 py-1 text-xs font-medium bg-gray-300 text-black rounded-md">
+                                <div className="flex gap-4 mt-2">
+                                    <button className="px-3 py-1 text-xs font-medium bg-gray-300 text-black rounded-md hover:scale-110">
                                         {details.source}
                                     </button>
-                                    <button className="px-3 py-1 text-xs font-medium bg-gray-300 text-black rounded-md">
+                                    <button className="px-3 py-1 text-xs font-medium bg-gray-300 text-black rounded-md hover:scale-110">
                                         {details.link}
                                     </button>
                                 </div>

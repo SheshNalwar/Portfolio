@@ -29,7 +29,7 @@ const Links = () => {
     const items = [
         "Homepage",
         "Skills",
-        "Portfolio",
+        "Projects",
         "Contact",
         "About",
 

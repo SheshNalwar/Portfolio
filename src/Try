@@ -2,7 +2,7 @@ import React from 'react'
 import { ProjectDetails } from '../../Data'
 const ProjectCard = ({ className }) => {
     return (
-        <div className='ProjectCard  flex items-center justify-center gap-10 p-10'>
+        <div className='ProjectCard  flex items-center justify-center gap-10 p-5'>
 
 
             {
@@ -10,7 +10,7 @@ const ProjectCard = ({ className }) => {
                     return (
                         <div key={index} className={`border text-white px-5 py-3${className}`} >
 
-                            <img className='h-60 w-full rounded-2xl border' src={details.imgSrc} alt={details.imgAlt} />
+                            <img className='h-60 w-full rounded-2xl border  ' src={details.imgSrc} alt={details.imgAlt} />
 
                             <div className='border w-full px-5 py-2'>
 
