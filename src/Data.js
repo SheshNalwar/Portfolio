@@ -89,15 +89,94 @@ export const skills = [
 export const ProjectDetails = [
     {
         title: "project1",
-        desc: "project 1 description",
-        imgSrc: "img source",
+        desc: "aspernatur quod blanditiis earum, fugit iusto unde, modi ad, id neque incidunt nobis quo dolorum odio quam.",
+        imgSrc: "/git.png",
         imgAlt: "image alt",
         skills: {
             one: "abc",
             two: "pqr",
             three: "xyz",
         },
-        link: "link to project",
-        source: "link to github source code",
+        link: "View",
+        source: "Source Code",
+    },
+    {
+        title: "project1",
+        desc: "aspernatur quod blanditiis earum, fugit iusto unde, modi ad, id neque incidunt nobis quo dolorum odio quam.",
+        imgSrc: "/git.png",
+        imgAlt: "image alt",
+        skills: {
+            one: "abc",
+            two: "pqr",
+            three: "xyz",
+        },
+        link: "View",
+        source: "Source Code",
+    },
+    {
+        title: "project1",
+        desc: "aspernatur quod blanditiis",
+        imgSrc: "/git.png",
+        imgAlt: "image alt",
+        skills: {
+            one: "abc",
+            two: "pqr",
+            three: "xyz",
+        },
+        link: "View",
+        source: "Source Code",
+    },
+    {
+        title: "project1",
+        desc: "aspernatur quod blanditiis",
+        imgSrc: "/git.png",
+        imgAlt: "image alt",
+        skills: {
+            one: "abc",
+            two: "pqr",
+            three: "xyz",
+        },
+        link: "View",
+        source: "Source Code",
+    },
+    {
+        title: "project1",
+        desc: "aspernatur quod blanditiis",
+        imgSrc: "/git.png",
+        imgAlt: "image alt",
+        skills: {
+            one: "abc",
+            two: "pqr",
+            three: "xyz",
+        },
+        link: "View",
+        source: "Source Code",
+    },
+    {
+        title: "project1",
+        desc: "aspernatur quod blanditiis",
+        imgSrc: "/git.png",
+        imgAlt: "image alt",
+        skills: {
+            one: "abc",
+            two: "pqr",
+            three: "xyz",
+        },
+        link: "View",
+        source: "Source Code",
+    }
+    ,
+    {
+        title: "project1",
+        desc: "aspernatur quod blanditiis",
+        imgSrc: "/git.png",
+        imgAlt: "image alt",
+        skills: {
+            one: "abc",
+            two: "pqr",
+            three: "xyz",
+        },
+        link: "View",
+        source: "Source Code",
     }
 ]
