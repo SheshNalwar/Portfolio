@@ -34,7 +34,7 @@ const ProjectCard = () => {
                     {ProjectDetails.map((details, index) => (
                         <div
                             key={index}
-                            className={`group  h-[70vh] w-[30vw] text-white px-3  overflow-hidden rounded-lg mx-[12px] border-2 border-purple-700`}
+                            className={`group  h-fit w-svw text-white px-3  overflow-hidden rounded-lg mx-[12px] border-2 border-purple-700`}
                         >
                             <img
                                 src={details.imgSrc}
