@@ -1,46 +1,219 @@
-import React from 'react'
-import { ProjectDetails } from '../../Data'
-const ProjectCard = ({ className }) => {
+
+import "./hero.scss";
+import { useState, useEffect } from "react";
+import { motion } from 'framer-motion';
+
+const Hero = () => {
+    const [loopNumH1, setLoopNumH1] = useState(0);
+    const [isDeletingH1, setIsDeletingH1] = useState(false);
+    const [textH1, setTextH1] = useState('');
+    const [deltaH1, setDeltaH1] = useState(100); // Faster typing speed for H1
+    const toRotateH1 = ["Crafting Code with Design Precision"];
+    const periodH1 = 1000;
+
+    const [loopNumH2, setLoopNumH2] = useState(0);
+    const [isDeletingH2, setIsDeletingH2] = useState(false);
+    const [textH2, setTextH2] = useState('');
+    const [deltaH2, setDeltaH2] = useState(100); // Faster typing speed for H2
+    const toRotateH2 = ["SHESH NALWAR"];
+    const periodH2 = 1000;
+
+    useEffect(() => {
+        let tickerH1;
+        if (loopNumH1 < toRotateH1.length) {
+            tickerH1 = setInterval(() => {
+                tickH1();
+            }, deltaH1);
+        }
+        return () => { clearInterval(tickerH1) };
+    }, [textH1]);
+
+    useEffect(() => {
+        let tickerH2;
+        if (loopNumH2 < toRotateH2.length) {
+            tickerH2 = setInterval(() => {
+                tickH2();
+            }, deltaH2);
+        }
+        return () => { clearInterval(tickerH2) };
+    }, [textH2]);
+
+    const tickH1 = () => {
+        let i = loopNumH1 % toRotateH1.length;
+        let fullText = toRotateH1[i];
+        let updatedText = isDeletingH1 ? fullText.substring(0, textH1.length - 1) : fullText.substring(0, textH1.length + 1);
+
+        setTextH1(updatedText);
+
+        if (!isDeletingH1 && updatedText === fullText) {
+            setTimeout(() => {
+                setLoopNumH1(loopNumH1 + 1);
+            }, periodH1);
+        }
+    };
+
+    const tickH2 = () => {
+        let i = loopNumH2 % toRotateH2.length;
+        let fullText = toRotateH2[i];
+        let updatedText = isDeletingH2 ? fullText.substring(0, textH2.length - 1) : fullText.substring(0, textH2.length + 1);
+
+        setTextH2(updatedText);
+
+        if (!isDeletingH2 && updatedText === fullText) {
+            setTimeout(() => {
+                setLoopNumH2(loopNumH2 + 1);
+            }, periodH2);
+        }
+    };
+
+    const textVariants = {
+        initial: { opacity: 0 },
+        animate: { x: 0, opacity: 1, transition: { duration: 1, staggerChildren: 0.1 } },
+        scrollButton: { opacity: 1, y: 20, transition: { duration: 2, repeat: Infinity } }
+    };
+
+    const sliderVariants = {
+        initial: { x: 0 },
+        animate: { x: "-220%", transition: { repeat: Infinity, repeatType: "mirror", duration: 10, staggerChildren: 0.1 } }
+    };
+
+    const imageVariants = {
+        initial: { opacity: 0, x: 100 }, // Start off-screen (right) and invisible
+        animate: { opacity: 1, x: 0, transition: { duration: 1.5, ease: "easeOut" } } // Fade in and slide to original position
+    };
+
     return (
-        <div className='ProjectCard  flex items-center justify-center gap-10 p-5'>
-
-
-            {
-                ProjectDetails.map((details, index) => {
-                    return (
-                        <div key={index} className={`border text-white px-5 py-3${className}`} >
-
-                            <img className='h-60 w-full rounded-2xl border  ' src={details.imgSrc} alt={details.imgAlt} />
-
-                            <div className='border w-full px-5 py-2'>
-
-                                <h2 className='text-xl font-bold capitalize tracking-wider'>{details.title}</h2>
-
-                                <p className='text-base h-20 border border-red w-full'>{details.desc}</p>
-
-                                <div className="flex flex-row gap-4 mt-2">
-                                    {Object.values(details.skills).map((skill, index) => (
-                                        <button
-                                            key={index}
-                                            className=" px-2 text-sm font-bold rounded-md capitalize cursor-pointer bg-purple-700"
-                                        >
-                                            {skill}
-                                        </button>
-                                    ))}
-                                </div>
-
-                                <div className='flex flex-row gap-4 mt-2'>
-                                    <button className=' px-2 text-sm font-bold rounded-md capitalize cursor-pointer bg-gray-300 text-black'>{details.source}</button>
-                                    <button className=' px-2 text-sm font-bold rounded-md capitalize cursor-pointer bg-gray-300 text-black'>{details.link}</button>
-                                </div>
-                            </div>
-                        </div >
-                    )
-                })
-            }
+        <div className="hero h-screen w-full flex items-center justify-center relative">
+            <div className="wrapper">
+                <motion.div className="text-container" variants={textVariants} initial="initial" animate="animate" >
+                    <motion.h2 className="font-extrabold" variants={textVariants}>{textH2}</motion.h2>
+                    <motion.h1 className="font-medium uppercase" variants={textVariants}>{textH1}</motion.h1>
+                    <motion.div variants={textVariants} className="buttons">
+                        <motion.button variants={textVariants} className="btn cursor-pointer">See the Latest Works</motion.button>
+                        <motion.button variants={textVariants} className="btn cursor-pointer">Let's Connect</motion.button>
+                    </motion.div>
+                    <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="Scroll Icon" />
+                </motion.div>
+            </div>
+            {/* <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
+                A FULL STACK DEVELOPER AND DESIGNER
+            </motion.div> */}
+            <div className="img-container">
+                <motion.img
+                    variants={imageVariants}
+                    initial="initial"
+                    animate="animate"
+                    src="/shesh.png"
+                    alt="Hero Image"
+                />
+            </div>
         </div>
+    );
+};
 
-    )
-}
+export default Hero;
 
-export default ProjectCard
+
+
+// css
+// .hero {
+//     // height: calc(100vh - 100px);
+//     // max-width: 1366px;
+//     overflow: hidden;
+//     background: linear-gradient(180deg, #0c0c1d, #111132);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 0 10vw;
+//     position: relative;
+//     z-index: -1;
+
+//     .wrapper {
+//         width: 60%;
+//         height: 100%;
+
+//         .text-container {
+//             height: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             gap: 30px;
+
+//             h2 {
+//                 font-size: 30px;
+//                 color: rgb(136, 80, 192);
+//                 letter-spacing: 10px;
+//             }
+
+//             h1 {
+//                 font-size: 50px;
+//                 letter-spacing: 10px;
+//                 height: 200px;
+//             }
+
+//             .buttons {
+//                 .btn {
+//                     padding: 20px;
+//                     border: 1px solid white;
+//                     background-color: transparent;
+//                     border-radius: 10px;
+//                     color: white;
+//                     margin-right: 20px;
+//                     font-weight: 600;
+//                     cursor: pointer;
+//                 }
+
+//             }
+
+//             img {
+//                 width: 50px;
+//             }
+//         }
+//     }
+
+//     .slidingTextContainer {
+//         position: absolute;
+//         font-size: 50vh;
+//         bottom: -120px;
+//         white-space: nowrap;
+//         color: #ffffff10;
+//         width: 50%;
+//         font-weight: bold;
+//         letter-spacing: 10px;
+//         z-index: -1;
+//     }
+
+//     .img-container {
+//         height: 100%;
+//         width: 40%;
+//         top: 0%;
+//         right: 0%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         // border: 2px solid white;
+
+//         img {
+//             height: 75%;
+//             width: 100%;
+//             object-fit: cover;
+//             // animation: updown 3s ease-in-out infinite; // Apply the updown animation
+//             // border: 2px solid red;
+//             border-radius: 50%;
+//         }
+//     }
+// }
+
+// @keyframes updown {
+//     0% {
+//         transform: translateY(-20px);
+//     }
+
+//     50% {
+//         transform: translateY(20px);
+//     }
+
+//     100% {
+//         transform: translateY(-20px);
+//     }
+// }

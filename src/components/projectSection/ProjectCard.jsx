@@ -43,8 +43,8 @@ const ProjectCard = () => {
                             />
                             <div className=" w-full py-2">
                                 <h2 className="text-xl font-bold text-white capitalize tracking-wider ">{details.title}</h2>
-                                <p className="text-base h-20 text-gray-200 w-full">{details.desc}</p>
-                                <div className="flex flex-wrap gap-2 mt-2">
+                                <p className="text-base h-20 leading-5 text-gray-300 w-full">{details.desc}</p>
+                                <div className="flex flex-wrap gap-2 ">
                                     {Object.values(details.skills).map((skill, idx) => (
                                         <button
                                             key={idx}

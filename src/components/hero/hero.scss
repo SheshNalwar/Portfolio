@@ -1,101 +1,101 @@
-.hero {
-    height: calc(100vh - 100px);
-    max-width: 1366px;
-    overflow: hidden;
-    background: linear-gradient(180deg, #0c0c1d, #111132);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 10vw;
-    position: relative;
-    z-index: -1;
+// .hero {
+//     // height: calc(100vh - 100px);
+//     // max-width: 1366px;
+//     overflow: hidden;
+//     background: linear-gradient(180deg, #0c0c1d, #111132);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 0 10vw;
+//     position: relative;
+//     z-index: -1;
 
-    .wrapper {
-        width: 60%;
-        height: 100%;
+//     .wrapper {
+//         width: 60%;
+//         height: 100%;
 
-        .text-container {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 30px;
+//         .text-container {
+//             height: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             gap: 30px;
 
-            h2 {
-                font-size: 30px;
-                color: rgb(136, 80, 192);
-                letter-spacing: 10px;
-            }
+//             h2 {
+//                 font-size: 30px;
+//                 color: rgb(136, 80, 192);
+//                 letter-spacing: 10px;
+//             }
 
-            h1 {
-                font-size: 50px;
-                letter-spacing: 10px;
-                height: 200px;
-            }
+//             h1 {
+//                 font-size: 50px;
+//                 letter-spacing: 10px;
+//                 height: 200px;
+//             }
 
-            .buttons {
-                .btn {
-                    padding: 20px;
-                    border: 1px solid white;
-                    background-color: transparent;
-                    border-radius: 10px;
-                    color: white;
-                    margin-right: 20px;
-                    font-weight: 600;
-                    cursor: pointer;
-                }
+//             .buttons {
+//                 .btn {
+//                     padding: 20px;
+//                     border: 1px solid white;
+//                     background-color: transparent;
+//                     border-radius: 10px;
+//                     color: white;
+//                     margin-right: 20px;
+//                     font-weight: 600;
+//                     cursor: pointer;
+//                 }
 
-            }
+//             }
 
-            img {
-                width: 50px;
-            }
-        }
-    }
+//             img {
+//                 width: 50px;
+//             }
+//         }
+//     }
 
-    .slidingTextContainer {
-        position: absolute;
-        font-size: 50vh;
-        bottom: -120px;
-        white-space: nowrap;
-        color: #ffffff10;
-        width: 50%;
-        font-weight: bold;
-        letter-spacing: 10px;
-        z-index: -1;
-    }
+//     .slidingTextContainer {
+//         position: absolute;
+//         font-size: 50vh;
+//         bottom: -120px;
+//         white-space: nowrap;
+//         color: #ffffff10;
+//         width: 50%;
+//         font-weight: bold;
+//         letter-spacing: 10px;
+//         z-index: -1;
+//     }
 
-    .img-container {
-        height: 100%;
-        width: 40%;
-        top: 0%;
-        right: 0%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // border: 2px solid white;
+//     .img-container {
+//         height: 100%;
+//         width: 40%;
+//         top: 0%;
+//         right: 0%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         // border: 2px solid white;
 
-        img {
-            height: 75%;
-            width: 100%;
-            object-fit: cover;
-            // animation: updown 3s ease-in-out infinite; // Apply the updown animation
-            // border: 2px solid red;
-            border-radius: 50%;
-        }
-    }
-}
+//         img {
+//             height: 75%;
+//             width: 100%;
+//             object-fit: cover;
+//             // animation: updown 3s ease-in-out infinite; // Apply the updown animation
+//             // border: 2px solid red;
+//             border-radius: 50%;
+//         }
+//     }
+// }
 
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
+// @keyframes updown {
+//     0% {
+//         transform: translateY(-20px);
+//     }
 
-    50% {
-        transform: translateY(20px);
-    }
+//     50% {
+//         transform: translateY(20px);
+//     }
 
-    100% {
-        transform: translateY(-20px);
-    }
-}
+//     100% {
+//         transform: translateY(-20px);
+//     }
+// }
