@@ -34,21 +34,21 @@ const ProjectCard = () => {
                     {ProjectDetails.map((details, index) => (
                         <div
                             key={index}
-                            className={`group  h-[70vh] w-[30vw] text-white px-5 py-3 overflow-hidden rounded-lg mx-[12px] border-2 border-purple-700`}
+                            className={`group  h-[70vh] w-[30vw] text-white px-3  overflow-hidden rounded-lg mx-[12px] border-2 border-purple-700`}
                         >
                             <img
                                 src={details.imgSrc}
                                 alt={details.imgAlt}
-                                className=" h-60 w-full transition-transform duration-300"
+                                className=" h-60 w-full transition-transform duration-300 object-contain"
                             />
-                            <div className=" w-full px-5 py-2">
+                            <div className=" w-full py-2">
                                 <h2 className="text-xl font-bold text-white capitalize tracking-wider ">{details.title}</h2>
                                 <p className="text-base h-20 text-gray-200 w-full">{details.desc}</p>
                                 <div className="flex flex-wrap gap-2 mt-2">
                                     {Object.values(details.skills).map((skill, idx) => (
                                         <button
                                             key={idx}
-                                            className="px-2 w-auto text-sm font-bold rounded-md capitalize cursor-pointer bg-purple-700"
+                                            className="px-2 w-auto text-sm font-bold rounded-md capitalize cursor-pointer bg-purple-600"
                                         >
                                             {skill}
                                         </button>
