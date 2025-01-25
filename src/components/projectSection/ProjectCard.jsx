@@ -55,11 +55,11 @@ const ProjectCard = () => {
                                     ))}
                                 </div>
                                 <div className="flex gap-4 mt-2">
-                                    <button className="px-3 py-1 text-xs font-medium bg-gray-300 text-black rounded-md hover:scale-110">
-                                        {details.source}
+                                    <button className="px-3 py-1 text-sm font-bold bg-gray-300 text-black rounded-md hover:scale-110">
+                                        <a href={details.source} target="_blank">Source Code</a>
                                     </button>
-                                    <button className="px-3 py-1 text-xs font-medium bg-gray-300 text-black rounded-md hover:scale-110">
-                                        {details.link}
+                                    <button className="px-3 py-1 text-sm font-bold bg-gray-300 text-black rounded-md hover:scale-125">
+                                        <a href={details.link} target="_blank">View</a>
                                     </button>
                                 </div>
                             </div>

@@ -12,9 +12,15 @@ const Navbar = () => {
                     transition={{ duration: 0.5 }}
                 >Shesh Nalwar</motion.span> */}
                 <div className="social w-36 right-0">
-                    <a href="#"><img src="/facebook.png" alt="" /></a>
-                    <a href="#"><img src="/instagram.png" alt="" /></a>
-                    <a href="#"><img src="/youtube.png" alt="" /></a>
+                    <a href="https://github.com/SheshNalwar " target="_blank" className='bg-white rounded-2xl h-8 w-8'>
+                        <img src="/githubIcon.png" alt="" className='h-full w-full object-cover' />
+                    </a>
+                    <a href="https://www.linkedin.com/in/sheshnalwar/ " target="_blank" className='bg-white rounded-2xl h-8 w-8'>
+                        <img src="/linkedin.png" alt="" className='h-full w-full object-cover' />
+                    </a>
+                    <a href="https://x.com/NalwarShesh " target="_blank" className='bg-white rounded-2xl h-8 w-8'>
+                        <img src="/twitter.png" alt="" className='h-full w-full object-cover' />
+                    </a>
                 </div>
             </div>
         </div >

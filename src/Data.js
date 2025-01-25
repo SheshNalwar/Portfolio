@@ -97,8 +97,8 @@ export const ProjectDetails = [
             two: "Tailwind CSS",
             three: "Appwrite",
         },
-        link: "View",
-        source: "Source Code",
+        link: "https://krishinet.onrender.com/",
+        source: "https://github.com/Algoture/KrishiNET",
     },
     {
         title: "Cinemaven",
@@ -110,8 +110,8 @@ export const ProjectDetails = [
             two: "REST API",
             three: "Firebase",
         },
-        link: "View",
-        source: "Source Code",
+        link: "https://cinemavenclient.onrender.com/",
+        source: "https://github.com/Algoture/Cinemaven",
     }, {
         title: "Shubham Enterprises",
         desc: "A professional loan agency website designed for seamless loan management and customer engagement.",
@@ -122,8 +122,8 @@ export const ProjectDetails = [
             two: "GSAP",
             three: "SCSS",
         },
-        link: "View",
-        source: "Source Code",
+        link: "https://shubhamenterprises.onrender.com/",
+        source: "https://github.com/SheshNalwar/Shubham-Enterprises",
     },
     {
         title: "ASG Academy",
@@ -135,8 +135,8 @@ export const ProjectDetails = [
             two: "Sanity Studio",
             three: "GSAP",
         },
-        link: "View",
-        source: "Source Code",
+        link: "https://asg-academy.onrender.com/",
+        source: "https://github.com/SheshNalwar/ASG-Academy",
     },
     {
         title: "Resonance Hub",
@@ -146,7 +146,7 @@ export const ProjectDetails = [
         skills: {
             one: "React Js",
             two: "Tailwind",
-            // three: "Js",
+
         },
         link: "View",
         source: "Source Code",

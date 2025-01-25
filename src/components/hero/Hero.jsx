@@ -121,18 +121,20 @@ const Hero = () => {
                         {textH1}
                     </motion.h1>
                     <motion.div variants={textVariants} className="flex gap-4">
-                        <motion.button
+                        <motion.a
                             variants={textVariants}
                             className="px-5 py-3 border border-white rounded-lg text-white font-semibold hover:bg-white hover:text-black transition"
+                            href="#Projects"
                         >
                             See the Latest Works
-                        </motion.button>
-                        <motion.button
+                        </motion.a>
+                        <motion.a
                             variants={textVariants}
-                            className="px-5 py-3 border border-white rounded-lg text-white font-semibold hover:bg-white hover:text-black transition"
+                            className="px-5 py-3 border border-white rounded-lg text-white font-semibold hover:bg-white hover:text-black transition scroll-smooth"
+                            href="#Contact"
                         >
                             Let's Connect
-                        </motion.button>
+                        </motion.a>
 
                     </motion.div>
                     <motion.img
