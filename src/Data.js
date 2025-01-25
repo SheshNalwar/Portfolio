@@ -144,12 +144,13 @@ export const ProjectDetails = [
         imgSrc: "/resonancehub.png",
         imgAlt: "Resonance Hub",
         skills: {
-            one: "React Js",
-            two: "Tailwind",
+            one: "HTML",
+            two: "CSS",
+            three: "JS"
 
         },
-        link: "View",
-        source: "Source Code",
+        link: "https://resonancehub.vercel.app/",
+        source: "https://github.com/SheshNalwar/Music-Player-Resonance-Hub",
     },
 
 ]
