@@ -19,9 +19,9 @@ const App = () => {
       <section id="Projects" className=" h-screen w-full flex items-center justify-center">
         <Project />
       </section>
-      <section id="Contact" className="w-full h-screen flex items-center justify-center">
+      {/* <section id="Contact" className="w-full h-screen flex items-center justify-center">
         <Contact />
-      </section>
+      </section> */}
     </>
   );
 };
