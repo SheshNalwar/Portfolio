@@ -4,9 +4,9 @@ import { motion } from "framer-motion"
 import Sidebar from '../sidebar/Sidebar'
 const Navbar = () => {
     return (
-        <div className='navbar h-16 z-10'>
-            {/* <Sidebar /> */}
-            <div className="wrapper w-full flex justify-end items-center px-36">
+        <div className='navbar sm:h-16 sm:w-full z-10 h-24 sm:flex sm:flex-row sm:items-center sm:justify-center justify-between'>
+            <Sidebar />
+            <div className="wrapper sm:w-full sm:h-full h-full w-1/3 sm:flex sm:justify-end items-center px-36 hidden">
                 {/* <motion.span initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}

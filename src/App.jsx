@@ -9,11 +9,11 @@ import Contact from "./components/contact/Contact";
 const App = () => {
   return (
     <>
-      <section id="Homepage" className="w-full h-screen snap-start">
+      <section id="Homepage" className="sm:w-full w-full sm:h-screen h-auto snap-start">
         <Navbar />
         <Hero />
       </section>
-      <section id="Skills" className="w-full h-screen flex items-center justify-center snap-center">
+      <section id="Skills" className="sm:w-full w-full sm:h-screen h-screen flex items-center justify-center snap-center">
         <Skills />
       </section>
       <section id="Projects" className=" h-screen w-full flex items-center justify-center">

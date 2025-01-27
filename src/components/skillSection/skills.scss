@@ -1,71 +1,71 @@
 /************ Skills Css ************/
 
 .skill {
-    height: 100%;
-    width: 90%;
-    position: relative;
-    color: white;
-    background-color: #111132;
+    // height: 100%;
+    // width: 90%;
+    // position: relative;
+    // color: white;
+    // background-color: #111132;
     // background: linear-gradient(180deg, #111132, #0c0c1d);
 }
 
 .skill-bx {
-    width: 100%;
-    background: #ffffff1c;
-    border-radius: 64px;
-    text-align: center;
-    padding: 30px 50px;
-    margin-top: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    // width: 100%;
+    // background: #ffffff1c;
+    // border-radius: 64px;
+    // text-align: center;
+    // padding: 30px 50px;
+    // margin-top: 60px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
 }
 
 .skill h2 {
-    font-size: 45px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+    // font-size: 45px;
+    // font-weight: 700;
+    // text-transform: uppercase;
+    // letter-spacing: 5px;
 }
 
 .skill p {
-    width: 60vw;
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
+    // width: 60vw;
+    // text-align: center;
+    // color: white;
+    // font-size: 18px;
+    // letter-spacing: 0.8px;
+    // line-height: 1.5em;
     // margin: 14px 0 75px 0;
-    margin: 30px 20px;
+    // margin: 30px 20px;
 }
 
 .skill-slider {
-    width: 80%;
+    // width: 80%;
     /* Adjusted to ensure full width */
     // margin: 0 auto;
-    position: relative;
+    // position: relative;
 }
 
 .skill-slider .item {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // height: 100%;
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
 }
 
 .skill-slider .item h5 {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
+    // font-size: 16px;
+    // font-weight: 500;
+    // letter-spacing: 1.5px;
 }
 
 .skill-slider .item img {
-    width: 60%;
-    height: 9 0%;
+    // width: 60%;
+    // height: 90%;
     /* Adjusted for better fit */
-    margin-bottom: 15px;
-    height: 100%;
-    object-fit: contain;
+    // margin-bottom: 15px;
+    // height: 100%;
+    // object-fit: contain;
 }

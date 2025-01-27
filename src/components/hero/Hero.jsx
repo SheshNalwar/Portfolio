@@ -100,8 +100,9 @@ const Hero = () => {
     };
 
     return (
-        <div className="h-screen px-32 w-full flex items-center justify-center relative bg-gradient-to-b from-[#0c0c1d] to-[#111132]">
-            <div className="w-3/5 h-full flex flex-col justify-center gap-8">
+        <div className="sm:h-screen h-4/5 sm:px-32 sm:w-full flex sm:items-center sm:justify-center relative bg-gradient-to-b from-[#0c0c1d] to-[#111132]  sm:py-0 py-5 w-full sm:mt-0 mt-5 sm:flex-row flex-col-reverse 
+        ">
+            <div className="sm:w-3/5 sm:h-full sm:flex sm:flex-col  sm:justify-center sm:gap-8 px-8 py-5">
                 <motion.div
                     className="flex flex-col justify-center gap-8"
                     variants={textVariants}
@@ -109,28 +110,28 @@ const Hero = () => {
                     animate="animate"
                 >
                     <motion.h2
-                        className="text-3xl uppercase font-extrabold text-purple-600 tracking-[6px]"
+                        className="sm:text-3xl uppercase font-extrabold text-purple-600 tracking-[6px] text-2xl text-center sm:text-start"
                         variants={textVariants}
                     >
                         {textH2}
                     </motion.h2>
                     <motion.h1
-                        className="text-5xl font-medium uppercase tracking-[10px] h-52 w-3/4 overflow-hidden leading-snug"
+                        className="sm:text-5xl text-3xl sm:font-medium font-semibold uppercase tracking-[10px] sm:h-52 h-40 sm:w-3/2 w-auto text-center sm:text-start overflow-hidden sm:leading-snug leading-snug sm:px-0 px-1"
                         variants={textVariants}
                     >
                         {textH1}
                     </motion.h1>
-                    <motion.div variants={textVariants} className="flex gap-4">
+                    <motion.div variants={textVariants} className="flex gap-4 items-center justify-center sm:justify-start">
                         <motion.a
                             variants={textVariants}
-                            className="px-5 py-3 border border-white rounded-lg text-white font-semibold hover:bg-white hover:text-black transition"
+                            className="sm:px-5 px-3 sm:py-3 py-2 border border-white rounded-lg text-white font-semibold hover:bg-white hover:text-black transition"
                             href="#Projects"
                         >
                             See the Latest Works
                         </motion.a>
                         <motion.a
                             variants={textVariants}
-                            className="px-5 py-3 border border-white rounded-lg text-white font-semibold hover:bg-white hover:text-black transition scroll-smooth"
+                            className="sm:px-5 px-3 sm:py-3 py-2 border border-white rounded-lg text-white font-semibold hover:bg-white hover:text-black transition scroll-smooth"
                             href="#Contact"
                         >
                             Let's Connect
@@ -142,18 +143,18 @@ const Hero = () => {
                         animate="scrollButton"
                         src="/scroll.png"
                         alt="Scroll Icon"
-                        className="w-12"
+                        className="w-14"
                     />
                 </motion.div>
             </div>
-            <div className="w-2/5 h-full flex items-center justify-center">
+            <div className="sm:w-2/5 w-full sm:h-full flex items-center justify-center">
                 <motion.img
                     variants={imageVariants}
                     initial="initial"
                     animate="animate"
                     src="/shesh.png"
                     alt="Hero Image"
-                    className="h-3/4 w-full object-cover rounded-full"
+                    className="sm:h-3/4 h-64 w-64 sm:w-full object-cover rounded-full"
                 />
             </div>
         </div>

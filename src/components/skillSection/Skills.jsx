@@ -1,6 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import './skills.scss';
+// import './skills.scss';
 import { skills } from "../../Data";
 export const Skills = () => {
     const responsive = {
@@ -23,24 +23,24 @@ export const Skills = () => {
     };
 
     return (
-        <section className="skill">
+        <section className="skill sm:h-screen h-5/6 sm:w-10/12 relative text-white sm:bg-[#111132] bg-transparent sm:mt-48 mt-0 ">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <div className="skill-bx wow zoomIn">
-                            <h2>Skills</h2>
-                            <p>"I specialize in web development, UI/UX design, and full stack solutions. <br /> With experience working with real-time clients, I deliver responsive, user-focused designs and efficient, scalable backend systems."</p>
+                        <div className="skill-bx wow zoomIn sm:w-full h-auto rounded-3xl text-center bg-[#ffffff1c] rounded-5xl sm:px-10 sm:py-10 sm:mt-16 flex items-center justify-center flex-col">
+                            <h2 className='text-5xl font-bold uppercase tracking-widest'>Skills</h2>
+                            <p className='w-3/4 text-center text-white text-lg tracking-wider leading-normal my-8 mx-5'>"I specialize in web development, UI/UX design, and full stack solutions. <br /> With experience working with real-time clients, I deliver responsive, user-focused designs and efficient, scalable backend systems."</p>
                             <Carousel
                                 responsive={responsive}
                                 infinite={true}
-                                className="owl-carousel owl-theme skill-slider"
+                                className="owl-carousel owl-theme skill-slider w-3/4 relative"
                             >
                                 {
                                     skills.map((skill, index) => {
                                         return (
-                                            <div className="item" key={index}>
-                                                <img src={skill.imgSrc} alt={skill.alt} />
-                                                <h5>{skill.name}</h5>
+                                            <div className="item h-full w-full flex items-center justify-center flex-col" key={index}>
+                                                <img className='w-28 mb-3 h-full object-contain' src={skill.imgSrc} alt={skill.alt} />
+                                                <h5 className=' text-base font-medium tracking-wide'>{skill.name}</h5>
                                             </div>
                                         )
                                     })
